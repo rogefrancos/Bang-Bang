@@ -8,6 +8,10 @@
 
 body, html{
     overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    touch-action: manipulation;
 }
 
 .bg-inicio{
@@ -201,6 +205,9 @@ body, html{
     cursor: pointer;
     background: rgba(0, 0, 0, 0.1);
     transition: 0.3s all;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
 }
  
 .left:hover{
@@ -224,6 +231,9 @@ body, html{
     cursor: pointer;
     background: rgba(0, 0, 0, 0.1);
     transition: 0.3s all;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
 }
  
 .right:hover{
@@ -261,7 +271,10 @@ body, html{
 }
  
 .img-personaje{
-    height: 200spx;
+    height: auto;
+    width: auto;
+    max-height: 45vh;
+    max-width: 42vw;
     object-fit: contain;
 }
 
