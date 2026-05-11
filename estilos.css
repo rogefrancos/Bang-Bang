@@ -200,7 +200,7 @@ body, html{
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    padding: 20px 0px 40px 0px;
+    padding: 15px 0px 30px 0px;
     box-sizing: border-box;
     cursor: pointer;
     background: rgba(0, 0, 0, 0.1);
@@ -208,7 +208,7 @@ body, html{
     touch-action: manipulation;
     -webkit-tap-highlight-color: transparent;
     user-select: none;
-    gap: 12px;
+    gap: 8px;
 }
  
 .left:hover{
@@ -227,7 +227,7 @@ body, html{
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    padding: 20px 0px 40px 0px;
+    padding: 15px 0px 30px 0px;
     box-sizing: border-box;
     cursor: pointer;
     background: rgba(0, 0, 0, 0.1);
@@ -235,7 +235,7 @@ body, html{
     touch-action: manipulation;
     -webkit-tap-highlight-color: transparent;
     user-select: none;
-    gap: 12px;
+    gap: 8px;
 }
  
 .right:hover{
@@ -279,9 +279,10 @@ body, html{
 .img-personaje{
     height: auto;
     width: auto;
-    max-height: 45vh;
-    max-width: 42vw;
+    max-height: 40vh;
+    max-width: 40vw;
     object-fit: contain;
+    flex-shrink: 0;
 }
 
 #personaje2{
@@ -299,10 +300,10 @@ body, html{
 .msj, .no1, .no2, .no3{
     width: 100%;
     position: absolute;
-    top: calc(50% - 100px);
+    top: calc(50% - 50px);
     text-align: center;
-    font-size: clamp(2em, 8vw, 4em);
-    line-height: 200px;
+    font-size: clamp(1.2em, 5vw, 2.5em);
+    line-height: 100px;
     opacity: 0;
     transition: .3s all;
     color: #f1ac39;
