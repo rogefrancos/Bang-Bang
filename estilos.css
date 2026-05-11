@@ -310,6 +310,13 @@ body, html{
     text-shadow: 0px 3px 0px rgba(0,0,0,.5);
 }
 
+.no1 img, .no2 img, .no3 img{
+    max-width: 30vw;
+    max-height: 30vh;
+    width: auto;
+    height: auto;
+}
+
 .muertes1, .muertes2{
     display: flex;
     justify-content: center;
