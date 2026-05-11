@@ -198,9 +198,9 @@ body, html{
     float: left;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    padding: 30px 0px;
+    padding: 20px 0px 40px 0px;
     box-sizing: border-box;
     cursor: pointer;
     background: rgba(0, 0, 0, 0.1);
@@ -208,6 +208,7 @@ body, html{
     touch-action: manipulation;
     -webkit-tap-highlight-color: transparent;
     user-select: none;
+    gap: 12px;
 }
  
 .left:hover{
@@ -224,9 +225,9 @@ body, html{
     float: left;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    padding: 30px 0px;
+    padding: 20px 0px 40px 0px;
     box-sizing: border-box;
     cursor: pointer;
     background: rgba(0, 0, 0, 0.1);
@@ -234,6 +235,7 @@ body, html{
     touch-action: manipulation;
     -webkit-tap-highlight-color: transparent;
     user-select: none;
+    gap: 12px;
 }
  
 .right:hover{
@@ -246,14 +248,18 @@ body, html{
  
 .left h2{
     color: #f1ac39;
-    font-size: 2em;
+    font-size: clamp(1em, 4vw, 2em);
     text-shadow: 0px 3px 0px rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 20px;
 }
  
 .right h2{
     color: #f1ac39;
-    font-size: 2em;
+    font-size: clamp(1em, 4vw, 2em);
     text-shadow: 0px 3px 0px rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 20px;
 }
  
 .vidas1{
@@ -295,7 +301,7 @@ body, html{
     position: absolute;
     top: calc(50% - 100px);
     text-align: center;
-    font-size: 4em ;
+    font-size: clamp(2em, 8vw, 4em);
     line-height: 200px;
     opacity: 0;
     transition: .3s all;
